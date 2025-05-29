@@ -95,8 +95,14 @@ Follow these steps to set up and run the voice-enabled AI assistant locally.
 ### 1. Environment Setup
 
 Ensure you are using **Python 3.10**.
+#### 1.1 Clone the Repository
 
-#### 1.1 Create Virtual Environment
+```bash
+git clone https://github.com/HitPant/ai-frontdesk-assistant.git
+cd ai-frontdesk-assistant
+```
+
+#### 1.2 Create Virtual Environment
 
 ```bash
 python3.10 -m venv voice-assistant
@@ -106,6 +112,10 @@ source voice-assistant/bin/activate
 Windows:
 voice-assistant\Scripts\activate
 ```
+### 2. Requirements
+```bash
+pip install -r requirements.txt
+```
 
 ### 3. Set API Keys
 
@@ -114,7 +124,6 @@ Create a `.env` file in the root directory with the following content:
 GOOGLE_API_KEY=your_google_generativeai_key  
 GOOGLE_APPLICATION_CREDENTIALS=path_to_google_tts_service_account.json
 ```
-
 
 ### 4. Run the App
 Launch the Streamlit interface:
