@@ -100,6 +100,7 @@ Ensure you are using **Python 3.10**.
 
 ```bash
 python3.10 -m venv voice-assistant
+```
 
 Linux:
 source voice-assistant/bin/activate
