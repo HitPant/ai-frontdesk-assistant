@@ -116,7 +116,7 @@ GOOGLE_APPLICATION_CREDENTIALS=path_to_google_tts_service_account.json
 ```
 
 
-4. Run the App
+### 4. Run the App
 Launch the Streamlit interface:
 ```bash
 streamlit run streamlit_app.py
