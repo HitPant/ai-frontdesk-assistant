@@ -105,3 +105,11 @@ Linux:
 source voice-assistant/bin/activate
 Windows:
 voice-assistant\Scripts\activate
+
+
+### 3. Set API Keys
+
+Create a `.env` file in the root directory with the following content:
+GOOGLE_API_KEY=your_google_generativeai_key  
+GOOGLE_APPLICATION_CREDENTIALS=path_to_google_tts_service_account.json
+
