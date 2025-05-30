@@ -122,6 +122,21 @@ pip install -r requirements.txt
 ### 3. Set API Keys
 
 Create a `.env` file in the root directory with the following content:
+Your AI assistant relies on two Google services—Generative AI (Gemini) for the LLM and Cloud Text-to-Speech for voice output. You must provide:
+
+- **`GOOGLE_API_KEY`**  
+  Your Google Generative AI (Gemini) API key.  
+  Used in `app.py` to configure the LLM chat session:  
+  ```python
+  genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+
+
+- **` GOOGLE_APPLICATION_CREDENTIALS`**  
+Path to your Google Cloud service account JSON file.
+Used by tts.py when instantiating the TextToSpeechClient for TTS:
+```bash
+client = texttospeech.TextToSpeechClient()
+```
 ```bash
 GOOGLE_API_KEY=your_google_generativeai_key  
 GOOGLE_APPLICATION_CREDENTIALS=path_to_google_tts_service_account.json
