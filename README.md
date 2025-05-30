@@ -92,9 +92,11 @@ Defines the assistant’s role, behavior, and communication protocol.
 Follow these steps to set up and run the voice-enabled AI assistant locally.
 
 
-### 1. Environment Setup
+## Environment Setup
 
-Ensure you are using **Python 3.10**.
+1. **Python Version**  
+   Ensure you are using **Python 3.10**.  
+   > Python 3.10 is required for compatibility with the Google Generative AI libraries; versions >3.10 are not yet supported and may cause import or runtime errors.
 #### 1.1 Clone the Repository
 
 ```bash
